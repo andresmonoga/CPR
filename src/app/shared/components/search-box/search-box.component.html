@@ -1,0 +1,20 @@
+<!--(keyup.enter)="emitValue(txtInput.value)" -->
+
+<!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <button class="btn btn-outline-success col-3" 
+  (click)="emitValue(txtInput.value)">
+   Buscar 
+</button>
+</div> -->
+
+<input 
+type="text"
+ class="form-control"
+  [placeholder]="placeholder"
+  (keyup)="onKeyPress(txtInput.value)"
+  [value]="initialValue"
+  #txtInput
+
+  >
+ 
+  
